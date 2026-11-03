@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rviz_visualization</name>
+  <version>0.9.0</version>
+  <description>
+    오토모티브SW프로그래밍 9주차 — RViz2 심화 시각화와 커스텀 마커 파이프라인.
+    LINE_STRIP 주행 경로선, CUBE 장애물 바운딩 박스, TEXT_VIEW_FACING 빌보드 라벨,
+    그리고 과거 5초 주행 궤적을 알파 그라데이션 POINTS로 발행한다.
+  </description>
+  <maintainer email="jom23760@gmail.com">조민서</maintainer>
+  <license>MIT</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
